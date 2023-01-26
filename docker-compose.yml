@@ -1,0 +1,9 @@
+services:
+  glossary:
+    build:
+      dockerfile: Dockerfile
+    container_name: python-glossary
+    environment:
+      - PYTHONUNBUFFERED=1
+    ports:
+      - 8000:8000
